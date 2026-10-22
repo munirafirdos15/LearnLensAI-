@@ -454,3 +454,239 @@ footer {
   gap: 14px;
   margin-top: 18px;
 }
+
+/* Knowledge Graph dashboard */
+
+.graph-panel {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid #dbe2ea;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #172033;
+}
+
+.graph-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.graph-panel-heading h2 {
+  margin: 8px 0;
+}
+
+.graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0 16px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.graph-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mastered-dot {
+  background: #16a34a;
+}
+
+.developing-dot {
+  background: #2563eb;
+}
+
+.practice-dot {
+  background: #f59e0b;
+}
+
+.graph-nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0 28px;
+}
+
+.graph-node {
+  padding: 18px;
+  border: 1px solid #dbe2ea;
+  border-top: 4px solid #f59e0b;
+  border-radius: 12px;
+  background: #ffffff;
+  min-width: 0;
+}
+
+.graph-node.mastered {
+  border-top-color: #16a34a;
+}
+
+.graph-node.developing {
+  border-top-color: #2563eb;
+}
+
+.graph-node.needs-practice {
+  border-top-color: #f59e0b;
+}
+
+.graph-node-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.graph-node-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+.mastery-badge {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.mastery-badge.mastered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mastery-badge.developing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.graph-node h3 {
+  margin: 16px 0 10px;
+  font-size: 17px;
+}
+
+.mastery-number {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.mastery-number span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.graph-progress {
+  height: 8px;
+  margin: 12px 0 16px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.graph-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #f59e0b;
+  transition: width 250ms ease;
+}
+
+.graph-node.mastered .graph-progress-fill {
+  background: #16a34a;
+}
+
+.graph-node.developing .graph-progress-fill {
+  background: #2563eb;
+}
+
+.graph-connections {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10px;
+}
+
+.graph-connections p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.graph-connections strong {
+  color: #475569;
+}
+
+.graph-edges {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.graph-edges h3 {
+  margin-bottom: 6px;
+}
+
+.graph-edges ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.graph-edges li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.edge-arrow {
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .graph-panel {
+    padding: 16px;
+  }
+
+  .graph-panel-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .graph-nodes {
+    grid-template-columns: 1fr;
+  }
+
+  .graph-edges ul {
+    grid-template-columns: 1fr;
+  }
+}
