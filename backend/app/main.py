@@ -353,3 +353,5 @@ def get_recommendations(student_id: int):
         ),
         "recommendations": recommendations
     }
+from app.api_routes import router as adaptive_router
+app.include_router(adaptive_router)
