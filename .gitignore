@@ -1,0 +1,33 @@
+# Local environments
+.venv/
+venv/
+backend/venv/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Runtime databases and local backups
+*.db
+*.sqlite
+*.sqlite3
+backups/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Logs and editor files
+*.log
+.vscode/
+.idea/
+.DS_Store

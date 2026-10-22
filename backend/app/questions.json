@@ -1,0 +1,87 @@
+
+[
+  {
+    "topic": "Variables and Data Types",
+    "description": "Understand variables and basic Python data types.",
+    "question": "Which Python data type stores True or False?",
+    "options": {
+      "A": "int",
+      "B": "str",
+      "C": "bool",
+      "D": "list"
+    },
+    "correct_answer": "C",
+    "difficulty": "beginner",
+    "explanation": "The bool type stores Boolean values: True and False."
+  },
+  {
+    "topic": "Variables and Data Types",
+    "description": "Understand variables and basic Python data types.",
+    "question": "What is the type of 3.14 in Python?",
+    "options": {
+      "A": "int",
+      "B": "float",
+      "C": "str",
+      "D": "bool"
+    },
+    "correct_answer": "B",
+    "difficulty": "beginner",
+    "explanation": "Decimal numbers such as 3.14 are represented by float."
+  },
+  {
+    "topic": "Conditional Statements",
+    "description": "Use if, elif, and else to make decisions.",
+    "question": "Which keyword checks a condition in Python?",
+    "options": {
+      "A": "if",
+      "B": "for",
+      "C": "def",
+      "D": "import"
+    },
+    "correct_answer": "A",
+    "difficulty": "beginner",
+    "explanation": "The if keyword executes a block when its condition is true."
+  },
+  {
+    "topic": "Conditional Statements",
+    "description": "What does an else block do?",
+    "question": "When does an else block execute?",
+    "options": {
+      "A": "Always",
+      "B": "When the preceding condition is false",
+      "C": "Only inside a loop",
+      "D": "When a function is defined"
+    },
+    "correct_answer": "B",
+    "difficulty": "beginner",
+    "explanation": "An else block runs when the corresponding if condition is false."
+  },
+  {
+    "topic": "Loops",
+    "description": "Repeat instructions using Python loops.",
+    "question": "What does range(3) generate?",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "0, 1, 2",
+      "C": "0, 1, 2, 3",
+      "D": "3, 2, 1"
+    },
+    "correct_answer": "B",
+    "difficulty": "beginner",
+    "explanation": "range(3) generates 0, 1, and 2."
+  },
+  {
+    "topic": "Loops",
+    "description": "Repeat instructions using Python loops.",
+    "question": "Which loop is commonly used to iterate over a list?",
+    "options": {
+      "A": "if",
+      "B": "try",
+      "C": "for",
+      "D": "class"
+    },
+    "correct_answer": "C",
+    "difficulty": "beginner",
+    "explanation": "A for loop can iterate over each element in a list."
+  }
+]
