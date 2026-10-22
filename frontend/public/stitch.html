@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#131b2e","surface-container-low":"#eff4ff","secondary-fixed-dim":"#c3c0ff","outline":"#787680","inverse-on-surface":"#eaf1ff","primary-fixed":"#e3dfff","on-error":"#ffffff","on-primary-fixed-variant":"#444173","surface-container-lowest":"#ffffff","background":"#f8f9ff","on-primary-fixed":"#181445","on-secondary-fixed":"#0f0069","tertiary-fixed":"#dae2fd","error-container":"#ffdad6","secondary":"#4b41e1","secondary-container":"#645efb","surface":"#f8f9ff","surface-dim":"#cbdbf5","surface-bright":"#f8f9ff","secondary-fixed":"#e2dfff","inverse-surface":"#213145","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","surface-container-high":"#dce9ff","outline-variant":"#c8c5d0","on-surface":"#0b1c30","on-secondary":"#ffffff","surface-tint":"#5b598c","surface-variant":"#d3e4fe","tertiary-container":"#192135","primary-container":"#1e1b4b","tertiary":"#030a1d","on-primary-container":"#8683ba","on-background":"#0b1c30","on-error-container":"#93000a","on-secondary-container":"#fffbff","on-primary":"#ffffff","primary":"#070235","on-tertiary-fixed-variant":"#3f465c","on-surface-variant":"#47464f","on-tertiary":"#ffffff","on-tertiary-container":"#8188a0","on-secondary-fixed-variant":"#3323cc","inverse-primary":"#c4c1fb","error":"#ba1a1a","primary-fixed-dim":"#c4c1fb","tertiary-fixed-dim":"#bec6e0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","gutter-mobile":"1rem","space-md":"1rem","space-xl":"2.5rem"},"fontFamily":{"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"display-lg":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-full"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="LearnLens AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xc4KXG_1owmS1NoOS2JMivdVa8wTEel_XKLc3xhh8kkIcFK1Uh834x1xkZBRUqo4uqL_DD_oqBcxMxVAI6FHH1DpOqiZJ_hJAvHbD16ePRXhB7--DC_L_OLaJiu3i1dLOL9t13AO3IfKVmCUBZUbQ5kI1NQs_ovq2NOiyS1kHKgJEH8sZy86GP8EniiGOQz8-eHh1eEKMNyntt5fWrtl8w_K2jzxTDTRbOoOguLSSGfsTGxRLQJpu_aq8"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-primary font-semibold tracking-tight">LearnLens AI</span><span class="px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">FastAPI Mock Mode</span></div><span class="hidden lg:block font-label-sm text-label-sm text-on-primary-container">Find the gap. Fix the concept. Prove the progress.</span></div></div><div class="hidden xl:flex items-center px-space-md py-1 rounded-full bg-tertiary-container"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-tertiary-container"><span class="font-semibold text-secondary-fixed">Diagnose</span><span class="material-symbols-outlined text-sm">arrow_forward</span><span class="font-semibold text-secondary-fixed">Repair</span><span class="material-symbols-outlined text-sm">arrow_forward</span><span class="font-semibold text-secondary-fixed">Reassess</span></div></div></div><div class="flex items-center gap-space-md"><div class="flex items-center p-0.5 rounded-lg bg-tertiary-container text-on-tertiary-container"><button class="px-2.5 py-1 rounded font-label-md text-label-md bg-secondary-container text-on-secondary-container font-semibold transition-colors" type="button">Student</button><button class="px-2.5 py-1 rounded font-label-md text-label-md text-on-tertiary-container hover:text-on-tertiary transition-colors" type="button">Instructor</button></div><div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-md bg-tertiary-container font-label-sm text-label-sm text-on-tertiary-container"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span>Engine Sync: Live</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden md:block"><span class="font-label-md text-label-md text-on-primary font-semibold">Dr. Elena Vance</span><span class="font-label-sm text-label-sm text-on-primary-container">Pedagogical Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo3sOr9v6nQgwkzZDDBpUrRvLOPYSoN3HjBrL9j5BpBul0QAsW4VNg4awPm05sQNP0Pq68zeFKADynmF_d4pqk3KhlzdEqpNVCCJF_GfEIwGLOoW-PE3tiswBcL7IeVhp9a2PToq2w8zT_2E7u962FrUCxbHpqJlM83Qd3zmllacCQKgtMR13U2KRhYkCM3N0czk8k7GM7G3eBOEKTYJWUKhopZyjozKbaut9RlPb48T9DMMIZPZdp"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-sm px-space-md"><div class="px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Cognitive Navigation</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-secondary text-on-secondary font-semibold"><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="diagnostic-overview" href="#"><span class="material-symbols-outlined text-lg">analytics</span><span>Diagnostic Overview</span></a><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2 rounded-lg transition-colors bg-secondary text-on-secondary font-semibold" data-path="prerequisite-gap-map" href="#"><span class="material-symbols-outlined text-lg">account_tree</span><span>Prerequisite Gap Map</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="remediation-sandbox" href="#"><span class="material-symbols-outlined text-lg">precision_manufacturing</span><span>Concept Remediation</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="reassessment-engine" href="#"><span class="material-symbols-outlined text-lg">checklist</span><span>Mastery Reassessment</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="cohort-telemetry" href="#"><span class="material-symbols-outlined text-lg">query_stats</span><span>Cohort Telemetry</span></a></nav><div class="mt-space-md px-space-sm py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Pedagogical Rigor</span></div><div class="mx-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant font-medium">Gap Clearance</span><span class="text-secondary font-semibold">78.4%</span></div><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-secondary rounded-full w-[78%]"></div></div><span class="font-label-sm text-label-sm text-outline">Confidence: ±1.8% SE</span></div></div><div class="px-space-md flex flex-col gap-space-xs"><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="diagnostic-settings" href="#"><span class="material-symbols-outlined text-lg">tune</span><span>System Calibration</span></a><div class="p-2.5 rounded-lg bg-surface-container flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">verified</span><div class="flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-on-surface">Empirical Model</span><span class="font-label-sm text-label-sm text-on-surface-variant">IRT-3PL Activated</span></div></div></div></aside><div class="pl-64"><main class="relative pt-16 min-h-screen bg-surface w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full">
+<div class="absolute -top-12 right-12 w-96 h-96 rounded-full bg-secondary-fixed opacity-30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 left-10 w-72 h-72 rounded-full bg-primary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+<!-- 1. SIGNATURE HEADER -->
+<section class="relative z-10 flex flex-col gap-space-sm mb-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+            Cognitive Misconception Analysis
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-secondary">fingerprint</span>
+            DX-8402
+          </span>
+<span class="hidden md:inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span>IRT Standard Error:</span>
+<span class="text-on-surface font-semibold">±1.4%</span>
+</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+<span>Lens Sensitivity</span>
+</button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">ios_share</span>
+<span>Export Brief</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Misconception Detective: Unpacking Your Mental Model
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Diagnostic inference pipeline applied to Grade 6 Rational Number Operations • Task DX-Q4
+        </p>
+</div>
+<!-- Supportive Growth Mindset Banner -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Mistakes are proof of thinking!</span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+              You applied a consistent internal logic here, but an essential underlying fractional rule simply needs a slight recalibration.
+            </span>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Non-punitive Evaluation Mode
+        </div>
+</div>
+</section>
+<!-- 2. SIDE-BY-SIDE COMPARISON PANEL -->
+<section class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Left Card: Submitted Answer -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Diagnostic Input</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+              Observed State
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Task Formula: ½ + ⅓</span>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-error">Your Answer: 2/5</span>
+<span class="font-label-sm text-label-sm text-outline">(Distractor Selected)</span>
+</div>
+</div>
+<!-- Student Rationale Block -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-secondary">format_quote</span>
+<span>Student Scratchpad Rationale Recorded:</span>
+</div>
+<blockquote class="font-body-md text-body-md italic text-on-surface-variant pl-4">
+              “I added top numbers (1+1=2) and bottom numbers (2+3=5). That gives 2 out of 5.”
+            </blockquote>
+</div>
+</div>
+<!-- Analytical Breakdown Graphic -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-around gap-2 text-center">
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline">Top Add: 1 + 1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">2</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-outline">/</div>
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline">Bottom Add: 2 + 3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">5</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">close</span>
+            Independent whole-number arithmetic
+          </div>
+</div>
+</div>
+<!-- Right Card: Mathematically Accurate Answer -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Mathematical Target</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+              Rigorous Target
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Partition Equivalence Principle</span>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-secondary">Expected Answer: 5/6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(Exact Rational Sum)</span>
+</div>
+</div>
+<!-- Mathematical Rationale Block -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-secondary">calculate</span>
+<span>Unit Slicing Principle:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant pl-4">
+              Halves and thirds are distinct unit dimensions. Normalize to sixteenths/sixths: <strong class="text-on-surface font-semibold">½ = 3/6</strong> and <strong class="text-on-surface font-semibold">⅓ = 2/6</strong> → <strong class="text-secondary font-semibold">3/6 + 2/6 = 5/6</strong>.
+            </p>
+</div>
+</div>
+<!-- Accurate Visual Partition Slices (Inline SVG diagram) -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between gap-2">
+<div class="flex items-center gap-3">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 40 40">
+<!-- Sliced 6-part circle -->
+<circle class="text-surface-container-highest" cx="20" cy="20" fill="transparent" r="16" stroke="currentColor" stroke-width="4"></circle>
+<!-- 5 slices filled out of 6 (83.33% of circumference = ~83.7) -->
+<circle class="text-secondary" cx="20" cy="20" fill="transparent" r="16" stroke="currentColor" stroke-dasharray="83.77 100.53" stroke-linecap="round" stroke-width="4" transform="rotate(-90 20 20)"></circle>
+<text class="fill-current text-primary font-headline-sm text-xs font-bold" text-anchor="middle" x="20" y="24">5/6</text>
+</svg>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Uniform Unit Slices</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 out of 6 equivalent divisions</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">check</span>
+            Common unit preserved
+          </div>
+</div>
+</div>
+</section>
+<!-- 3. THE DIAGNOSTIC ANALYSIS CARD (Primary Focal Point) -->
+<section class="relative z-10 p-space-lg rounded-xl bg-surface-container-lowest shadow-md mb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Main Diagnosis Text (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+              Core Cognitive Pattern #CP-109
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">auto_graph</span>
+              Bayesian Pattern Match
+            </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Identified Misconception</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight mt-0.5">
+              Independent Numerator-Denominator Summation
+            </h2>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-base">psychology</span>
+<span>Plain-English Translation of Mental Model:</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+              “Treating a fraction as two separate whole numbers placed above and below a horizontal line, rather than comprehending the expression as a single unified ratio or continuous magnitude.”
+            </p>
+</div>
+<!-- Evidence Badges -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-outline font-medium">Diagnostic Corroboration:</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">draw</span>
+              Scratchpad phrase: “added top... added bottom”
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">ads_click</span>
+              Exact distractor selection (2/5)
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">history</span>
+              Latent consistency across 3 similar items
+            </span>
+</div>
+</div>
+<!-- Gauge & Statistical Calibration (4 cols) -->
+<div class="lg:col-span-4 p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center gap-space-sm shadow-sm">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<!-- Radial SVG Gauge -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container-highest" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="30.14" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">88%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Certainty</span>
+</div>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">High Pedagogical Confidence</span>
+<span class="font-label-sm text-label-sm text-outline">Inferred from semantic rationale &amp; response pattern clustering.</span>
+</div>
+<div class="w-full pt-space-xs">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span>Model Convergence</span>
+<span class="text-on-surface font-semibold">p &lt; 0.002</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[88%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PREREQUISITE KNOWLEDGE GAP MAP -->
+<section class="relative z-10 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">account_tree</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Prerequisite Dependency Chain</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Upstream mastery graph showing precisely where conceptual continuity cracked
+          </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold text-secondary">Root Gap:</span>
+<span>Common Denominators &amp; Unit Slicing</span>
+</span>
+</div>
+</div>
+<!-- Flow Nodes Chain -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md pt-space-sm relative">
+<!-- Node 1: Mastered -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow relative">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">Tier 1</span>
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Basic Parts of a Whole</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Understands 1/n partition of a single object.</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+<span>Status: Mastered</span>
+<span>100%</span>
+</div>
+</div>
+<!-- Node 2: Fragile -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow relative">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">Tier 2</span>
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">warning</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Equivalent Fractions</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multiplies numerator &amp; denominator, but lacks spatial intuition.</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-outline font-semibold">
+<span class="text-on-surface-variant">Status: Fragile</span>
+<span>61%</span>
+</div>
+</div>
+<!-- Node 3: Identified Gap (Target) -->
+<div class="p-space-md rounded-xl bg-error-container text-on-error-container flex flex-col justify-between gap-space-sm shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-error font-label-sm text-label-sm font-bold">Root Deficit</span>
+<span class="w-6 h-6 rounded-full bg-error text-on-error flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">close</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-error-container">Common Denominators</span>
+<span class="font-body-sm text-body-sm text-on-error-container mt-1">Re-partitioning disjoint slices to equal sizing before summation.</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm font-bold">
+<span>Status: Missing Gap</span>
+<span>22%</span>
+</div>
+</div>
+<!-- Node 4: Blocked -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-sm opacity-85">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">Tier 4 Target</span>
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">pause</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Fraction Addition</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Synthesis: adding unlike denominators symbolically.</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-outline font-semibold">
+<span>Status: Blocked</span>
+<span>Pending</span>
+</div>
+</div>
+</div>
+<!-- Explanatory Anchor Link -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-base">route</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">Pedagogical Prescription:</strong> Do not re-drill multi-term equations yet. First repair the physical slicing intuition of <strong>Common Denominators</strong> (10-minute visual interactive repair).
+        </span>
+</div>
+</section>
+<!-- 5. LEARNING-GAP SEVERITY & REPAIR ACTION -->
+<section class="relative z-10 p-space-lg rounded-xl bg-primary-container text-on-primary shadow-lg mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Gap Priority: Moderate
+            </span>
+<span class="font-label-sm text-label-sm text-on-primary-container">
+              Direct prerequisite to Grade 7 Rational Equations &amp; Linear Expressions
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary tracking-tight">
+            Ready to repair this foundational concept?
+          </h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Our adaptive visual sandbox lets you dynamically slide partitions, see why adding denominators violates equal unit logic, and seal the gap permanently.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary transition-all font-label-lg text-label-lg font-semibold shadow-md active:translate-y-px" type="button">
+<span>Repair This Concept Now</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-tertiary-container text-on-tertiary hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+<span>Review Step-by-Step Scratchpad</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Pedagogical Rigor Metadata Micro-bar -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-sm px-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">verified_user</span>
+          Evidence-weighted IRT Diagnostic
+        </span>
+<span class="hidden sm:inline">•</span>
+<span class="hidden sm:inline">Calibrated on 14,280 student diagnostic paths</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="text-secondary hover:underline font-semibold" href="#">Provide Learner Feedback</a>
+<span>•</span>
+<a class="text-on-surface-variant hover:text-on-surface" href="#">Instructor Trace View</a>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.02)] py-space-md px-gutter"><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><div class="flex items-center gap-space-sm font-label-sm text-label-sm"><span class="font-semibold text-on-surface">LearnLens AI</span><span>•</span><span>Analytical Remediation Architecture</span><span>•</span><span>© 2025 All Rights Reserved</span></div><div class="flex items-center gap-space-xs font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><span class="material-symbols-outlined text-sm text-secondary">terminal</span><span>Platform Stack: React + Vite + Tailwind + FastAPI backend demo</span></div></div></footer></div></body></html>
