@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "target_audience": "Computer Science, Computer Engineering and IT college students",
+  "concepts": [
+    {
+      "id": "programming_fundamentals",
+      "name": "Programming Fundamentals",
+      "description": "Variables, types, control flow and functions.",
+      "lesson": "Variables store values; data types define representations; conditions select branches; loops repeat operations; functions organize reusable logic.",
+      "worked_example": "If x = 4 and x = x + 3, the new value of x is 7.",
+      "practice_hint": "Trace each variable after every statement.",
+      "display_order": 1
+    },
+    {
+      "id": "data_structures",
+      "name": "Data Structures",
+      "description": "Arrays, stacks, queues, linked lists and trees.",
+      "lesson": "Arrays support indexed access; stacks use LIFO; queues use FIFO; trees represent hierarchical data.",
+      "worked_example": "Push 2 and then 5 onto a stack. The first value popped is 5.",
+      "practice_hint": "Choose a structure based on the operations you need.",
+      "display_order": 2
+    },
+    {
+      "id": "algorithms_complexity",
+      "name": "Algorithms and Complexity",
+      "description": "Searching, sorting and asymptotic complexity.",
+      "lesson": "Big-O describes how resource use grows with input size. Binary search requires sorted data and halves the search interval.",
+      "worked_example": "Binary search repeatedly halves a sorted search range.",
+      "practice_hint": "Count how operations grow when the input size doubles.",
+      "display_order": 3
+    },
+    {
+      "id": "database_systems",
+      "name": "Database Management Systems",
+      "description": "SQL, keys, normalization and transactions.",
+      "lesson": "Primary keys identify rows; foreign keys link tables; normalization reduces redundancy; transactions group operations reliably.",
+      "worked_example": "An Enrollments table can reference Students using student_id.",
+      "practice_hint": "Identify keys and repeated data before designing a schema.",
+      "display_order": 4
+    },
+    {
+      "id": "discrete_mathematics",
+      "name": "Discrete Mathematics",
+      "description": "Logic, sets, relations, counting and graphs.",
+      "lesson": "Logic studies truth-valued statements; sets group distinct elements; graph theory models vertices and edges.",
+      "worked_example": "If P is true and Q is false, P AND Q is false.",
+      "practice_hint": "Use a truth table instead of guessing.",
+      "display_order": 5
+    },
+    {
+      "id": "operating_systems",
+      "name": "Operating Systems",
+      "description": "Processes, threads, scheduling, memory and deadlocks.",
+      "lesson": "Operating systems manage hardware and processes. Threads share process resources, and scheduling allocates CPU time.",
+      "worked_example": "Round-robin scheduling gives each ready process a time quantum.",
+      "practice_hint": "Trace process states and resource ownership.",
+      "display_order": 6
+    }
+  ],
+  "prerequisites": [
+    {"concept_id": "data_structures", "prerequisite_id": "programming_fundamentals"},
+    {"concept_id": "algorithms_complexity", "prerequisite_id": "programming_fundamentals"},
+    {"concept_id": "algorithms_complexity", "prerequisite_id": "data_structures"},
+    {"concept_id": "database_systems", "prerequisite_id": "programming_fundamentals"},
+    {"concept_id": "operating_systems", "prerequisite_id": "programming_fundamentals"},
+    {"concept_id": "operating_systems", "prerequisite_id": "data_structures"}
+  ],
+  "questions": [
+  {"id":"pf_01","concept_id":"programming_fundamentals","difficulty":"beginner","question":"Which Python type represents True or False?","options":{"A":"int","B":"str","C":"bool","D":"list"},"correct_answer":"C","explanation":"The bool type represents Boolean truth values.","misconception_tags":{"A":"confuses_boolean_and_integer","B":"confuses_text_and_boolean","D":"confuses_collection_and_boolean"}},
+  {"id":"pf_02","concept_id":"programming_fundamentals","difficulty":"beginner","question":"What does a for loop commonly do?","options":{"A":"Repeats over an iterable","B":"Creates a database","C":"Always stops a program","D":"Declares a class only"},"correct_answer":"A","explanation":"A for loop iterates over items.","misconception_tags":{"B":"confuses_programming_and_database","C":"misunderstands_loop_control","D":"confuses_loops_and_classes"}},
+  {"id":"pf_03","concept_id":"programming_fundamentals","difficulty":"intermediate","question":"What is x after x = 4; x = x + 3?","options":{"A":"3","B":"4","C":"12","D":"7"},"correct_answer":"D","explanation":"The new value is 4 plus 3.","misconception_tags":{"A":"tracks_only_increment","B":"ignores_second_assignment","C":"confuses_addition_and_multiplication"}},
+  {"id":"pf_04","concept_id":"programming_fundamentals","difficulty":"advanced","question":"What is a main benefit of functions?","options":{"A":"Guarantee zero bugs","B":"Package reusable behavior","C":"Remove all data","D":"Always run faster"},"correct_answer":"B","explanation":"Functions improve modularity and reuse.","misconception_tags":{"A":"overestimates_function_guarantees","C":"misunderstands_function_inputs","D":"assumes_functions_are_always_faster"}},
+  {"id":"ds_01","concept_id":"data_structures","difficulty":"beginner","question":"Which structure follows LIFO?","options":{"A":"Queue","B":"Stack","C":"FIFO queue","D":"Tree"},"correct_answer":"B","explanation":"A stack removes the newest item first.","misconception_tags":{"A":"confuses_stack_and_queue","C":"confuses_lifo_and_fifo","D":"misidentifies_stack_order"}},
+  {"id":"ds_02","concept_id":"data_structures","difficulty":"beginner","question":"Which structure commonly follows FIFO?","options":{"A":"Stack","B":"Binary tree","C":"Queue","D":"Recursion"},"correct_answer":"C","explanation":"A queue removes items in insertion order.","misconception_tags":{"A":"confuses_stack_and_queue","B":"confuses_tree_and_queue","D":"confuses_control_flow_and_structure"}},
+  {"id":"ds_03","concept_id":"data_structures","difficulty":"intermediate","question":"Which structure normally provides O(1) indexed access?","options":{"A":"Array","B":"Singly linked list","C":"Linked-list search","D":"Tree traversal"},"correct_answer":"A","explanation":"Array indexing is constant time under the usual RAM model.","misconception_tags":{"B":"overestimates_linked_list_indexing","C":"confuses_search_and_indexing","D":"assumes_tree_access_is_constant"}},
+  {"id":"ds_04","concept_id":"data_structures","difficulty":"advanced","question":"Which BST traversal visits keys in sorted order?","options":{"A":"Preorder","B":"Postorder","C":"Level order","D":"Inorder"},"correct_answer":"D","explanation":"Inorder visits left subtree, node, then right subtree.","misconception_tags":{"A":"confuses_preorder_and_inorder","B":"confuses_postorder_and_inorder","C":"confuses_level_order_and_inorder"}},
+  {"id":"ac_01","concept_id":"algorithms_complexity","difficulty":"beginner","question":"What is the complexity of one pass through n items?","options":{"A":"O(1)","B":"O(log n)","C":"O(n)","D":"O(n^2)"},"correct_answer":"C","explanation":"The work grows linearly with input size.","misconception_tags":{"A":"underestimates_linear_work","B":"confuses_linear_and_logarithmic","D":"overestimates_single_loop"}},
+  {"id":"ac_02","concept_id":"algorithms_complexity","difficulty":"beginner","question":"Binary search requires which condition?","options":{"A":"Data is sorted","B":"Every value is always unique","C":"Data is a linked list only","D":"Target is first"},"correct_answer":"A","explanation":"Binary search uses sorted order to discard half the range.","misconception_tags":{"B":"adds_unnecessary_uniqueness","C":"misunderstands_binary_search_requirements","D":"misunderstands_search_target"}},
+  {"id":"ac_03","concept_id":"algorithms_complexity","difficulty":"intermediate","question":"Checking every pair among n items is typically what complexity?","options":{"A":"O(log n)","B":"O(n^2)","C":"O(1)","D":"O(n)"},"correct_answer":"B","explanation":"The number of pairs grows quadratically.","misconception_tags":{"A":"underestimates_pairwise_work","C":"ignores_input_growth","D":"confuses_nested_and_single_loop"}},
+  {"id":"ac_04","concept_id":"algorithms_complexity","difficulty":"advanced","question":"What is merge sort's usual time complexity?","options":{"A":"O(n^2)","B":"O(log n)","C":"O(n)","D":"O(n log n)"},"correct_answer":"D","explanation":"Merge sort processes n items at each of log n levels.","misconception_tags":{"A":"confuses_merge_sort_with_quadratic_sorting","B":"ignores_merge_work","C":"ignores_number_of_levels"}},
+  {"id":"db_01","concept_id":"database_systems","difficulty":"beginner","question":"What does a primary key do?","options":{"A":"Encrypts rows","B":"Uniquely identifies each row","C":"Permanently sorts rows","D":"Duplicates records"},"correct_answer":"B","explanation":"A primary key uniquely identifies a row.","misconception_tags":{"A":"confuses_keys_and_encryption","C":"confuses_identity_and_sort_order","D":"misunderstands_key_uniqueness"}},
+  {"id":"db_02","concept_id":"database_systems","difficulty":"beginner","question":"Which SQL command retrieves data?","options":{"A":"SELECT","B":"DROP","C":"INSERT","D":"UPDATE"},"correct_answer":"A","explanation":"SELECT queries rows and columns.","misconception_tags":{"B":"confuses_query_and_schema_deletion","C":"confuses_read_and_insert","D":"confuses_read_and_update"}},
+  {"id":"db_03","concept_id":"database_systems","difficulty":"intermediate","question":"A foreign key primarily enforces what?","options":{"A":"Faster CPU execution","B":"Uniqueness in every column","C":"Referential integrity","D":"Automatic encryption"},"correct_answer":"C","explanation":"Foreign keys link records and enforce referential integrity.","misconception_tags":{"A":"confuses_constraints_and_performance","B":"confuses_foreign_and_unique_keys","D":"confuses_integrity_and_encryption"}},
+  {"id":"db_04","concept_id":"database_systems","difficulty":"advanced","question":"Which ACID property means committed changes survive a crash?","options":{"A":"Atomicity","B":"Consistency","C":"Isolation","D":"Durability"},"correct_answer":"D","explanation":"Durability preserves committed transactions.","misconception_tags":{"A":"confuses_atomicity_and_durability","B":"confuses_consistency_and_durability","C":"confuses_isolation_and_durability"}},
+  {"id":"dm_01","concept_id":"discrete_mathematics","difficulty":"beginner","question":"If P is true and Q false, what is P AND Q?","options":{"A":"True","B":"False","C":"Both","D":"Always undefined"},"correct_answer":"B","explanation":"AND is true only when both operands are true.","misconception_tags":{"A":"confuses_and_with_or","C":"misunderstands_boolean_truth_values","D":"assumes_conjunction_is_undefined"}},
+  {"id":"dm_02","concept_id":"discrete_mathematics","difficulty":"beginner","question":"A set is best described as what?","options":{"A":"Ordered list allowing duplicates","B":"A function only","C":"Collection of distinct elements","D":"A process scheduler"},"correct_answer":"C","explanation":"A set contains distinct elements.","misconception_tags":{"A":"confuses_sets_and_lists","B":"confuses_sets_and_functions","D":"confuses_math_and_operating_systems"}},
+  {"id":"dm_03","concept_id":"discrete_mathematics","difficulty":"intermediate","question":"An undirected graph edge connects what?","options":{"A":"Two vertices without direction","B":"Only a self-loop","C":"Two ordered sequences","D":"Only a process and thread"},"correct_answer":"A","explanation":"An undirected edge represents a connection without direction.","misconception_tags":{"B":"confuses_edges_and_self_loops","C":"confuses_graphs_and_sequences","D":"over-specializes_graph_applications"}},
+  {"id":"dm_04","concept_id":"discrete_mathematics","difficulty":"advanced","question":"What is the contrapositive of If P then Q?","options":{"A":"If Q then P","B":"If not P then not Q","C":"P and Q","D":"If not Q then not P"},"correct_answer":"D","explanation":"The contrapositive is logically equivalent to the original implication.","misconception_tags":{"A":"confuses_converse_and_contrapositive","B":"confuses_inverse_and_contrapositive","C":"confuses_implication_and_conjunction"}},
+  {"id":"os_01","concept_id":"operating_systems","difficulty":"beginner","question":"What is a process?","options":{"A":"A running instance of a program","B":"A database key","C":"A sorting algorithm only","D":"A file extension"},"correct_answer":"A","explanation":"A process is an executing program with its state and resources.","misconception_tags":{"B":"confuses_os_and_database_terms","C":"confuses_process_and_algorithm","D":"confuses_execution_and_file_type"}},
+  {"id":"os_02","concept_id":"operating_systems","difficulty":"beginner","question":"Threads in the same process generally share what?","options":{"A":"Separate physical computers","B":"Address space and process resources","C":"Different OS necessarily","D":"No resources"},"correct_answer":"B","explanation":"Threads share the process address space and many resources.","misconception_tags":{"A":"confuses_threads_and_machines","C":"assumes_threads_require_separate_os","D":"misunderstands_shared_process_resources"}},
+  {"id":"os_03","concept_id":"operating_systems","difficulty":"intermediate","question":"Round-robin scheduling gives each ready process what?","options":{"A":"Permanent CPU ownership","B":"A database key","C":"A time quantum","D":"Unlimited memory"},"correct_answer":"C","explanation":"Each ready process receives a bounded CPU time slice.","misconception_tags":{"A":"confuses_preemptive_and_nonpreemptive_scheduling","B":"confuses_os_and_database_terms","D":"confuses_cpu_scheduling_and_memory"}},
+  {"id":"os_04","concept_id":"operating_systems","difficulty":"advanced","question":"Deadlock can occur when processes do what?","options":{"A":"Always finish immediately","B":"Only execute arithmetic","C":"Never request resources","D":"Wait indefinitely for resources held by one another"},"correct_answer":"D","explanation":"Deadlock can occur when processes wait cyclically for resources.","misconception_tags":{"A":"misunderstands_deadlock_liveness","B":"confuses_deadlock_and_computation","C":"ignores_resource_waiting"}}
+]
+}
